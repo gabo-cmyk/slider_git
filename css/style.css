@@ -1,8 +1,8 @@
-/* line 12, /Users/stefangabor/Desktop/Products/slider/css/style.scss */
+/* line 12, /Users/stefangabor/Documents/GitHub/slider_git/css/style.scss */
 body .container {
   position: relative;
   height: 100vh; }
-  /* line 16, /Users/stefangabor/Desktop/Products/slider/css/style.scss */
+  /* line 16, /Users/stefangabor/Documents/GitHub/slider_git/css/style.scss */
   body .container .slider {
     height: 400px;
     width: 100%;
@@ -11,17 +11,18 @@ body .container {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); }
-    /* line 23, /Users/stefangabor/Desktop/Products/slider/css/style.scss */
+    /* line 23, /Users/stefangabor/Documents/GitHub/slider_git/css/style.scss */
     body .container .slider .inner-slider {
       position: absolute;
       width: 100%; }
-      /* line 27, /Users/stefangabor/Desktop/Products/slider/css/style.scss */
+      /* line 27, /Users/stefangabor/Documents/GitHub/slider_git/css/style.scss */
       body .container .slider .inner-slider .slides {
         overflow: hidden;
         position: absolute;
         width: 100%;
-        height: 400px; }
-        /* line 33, /Users/stefangabor/Desktop/Products/slider/css/style.scss */
+        height: 400px;
+        z-index: 0; }
+        /* line 33, /Users/stefangabor/Documents/GitHub/slider_git/css/style.scss */
         body .container .slider .inner-slider .slides h1 {
           display: flex;
           font-weight: 700;
@@ -33,26 +34,31 @@ body .container {
           left: 50%;
           top: 50%;
           transform: translate(-50%, -50%); }
-    /* line 46, /Users/stefangabor/Desktop/Products/slider/css/style.scss */
+      /* line 45, /Users/stefangabor/Documents/GitHub/slider_git/css/style.scss */
+      body .container .slider .inner-slider .active {
+        z-index: 2 !important; }
+    /* line 51, /Users/stefangabor/Documents/GitHub/slider_git/css/style.scss */
     body .container .slider .slide1 {
       background-color: #63d790; }
-    /* line 50, /Users/stefangabor/Desktop/Products/slider/css/style.scss */
+    /* line 55, /Users/stefangabor/Documents/GitHub/slider_git/css/style.scss */
     body .container .slider .slide2 {
       background-color: #ee4e42; }
-    /* line 54, /Users/stefangabor/Desktop/Products/slider/css/style.scss */
+    /* line 59, /Users/stefangabor/Documents/GitHub/slider_git/css/style.scss */
     body .container .slider .slide3 {
       background-color: #3c98db; }
-    /* line 58, /Users/stefangabor/Desktop/Products/slider/css/style.scss */
+    /* line 63, /Users/stefangabor/Documents/GitHub/slider_git/css/style.scss */
     body .container .slider button {
       position: absolute;
       top: 50%; }
-    /* line 63, /Users/stefangabor/Desktop/Products/slider/css/style.scss */
+    /* line 68, /Users/stefangabor/Documents/GitHub/slider_git/css/style.scss */
     body .container .slider .next-button {
       right: 0;
-      margin-right: 5%; }
-    /* line 68, /Users/stefangabor/Desktop/Products/slider/css/style.scss */
+      margin-right: 5%;
+      z-index: 4; }
+    /* line 74, /Users/stefangabor/Documents/GitHub/slider_git/css/style.scss */
     body .container .slider .prev-button {
       left: 0;
-      margin-left: 5%; }
+      margin-left: 5%;
+      z-index: 4; }
 
 /*# sourceMappingURL=style.css.map */
