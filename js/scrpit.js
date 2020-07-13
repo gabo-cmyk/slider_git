@@ -1,6 +1,6 @@
 $(function () {
 
-    var index = 1;
+    var index = 0;
     var total = $('.slides').length;
 
     var nextSlide = function (direction) {
@@ -14,10 +14,9 @@ $(function () {
         });
     };
 
-    var nextSlide2 = function (direction2) {
+    var nextSlide2 = function () {
         $(".slides").removeClass("active");
         $(".slides").eq(index).addClass("active").css('z-index', '2');
-        direction2
     };
 
     $('.prev-button').on('click', function () {
@@ -27,7 +26,7 @@ $(function () {
 
     $('.next-button').on('click', function () {
         nextSlide('100%');
-        nextSlide2(index = (index + 1) % total)
+        nextSlide2(index = (index + 1) % total);
     });
 
 });
